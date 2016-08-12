@@ -35,7 +35,7 @@
                 {% if url_detail.wayback_url == 'none' %}
                 <td>{{url_detail.wayback_url}}</td>
                 {% else %}
-                <td><a href="{{url_detail.wayback_url}}">{{url_detail.wayback_url}}</a></td>
+                <td><a href="{{url_detail.wayback_url}}" target="_blank">{{url_detail.wayback_url}}</a></td>
                 {% endif %}
                 <td>{{url_detail.timestamp}}</td>
                 <td><a href="{% url 'delete' url_detail.pk %}">Delete</a></td>
